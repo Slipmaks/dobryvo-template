@@ -13,7 +13,7 @@
       type="text"
       placeholder="input text"
       v-model="yieldValue.inputValue"
-      @blur="validate(yieldValue.inputValue)"
+      @blur="validate(yieldValue)"
     />
     <p v-if="yieldValue.error.length">{{ yieldValue.error }}</p>
   </div>
@@ -27,14 +27,15 @@ export default {
     const yieldValue = ref({ inputValue: "", error: "" });
     const stringValidate = new RegExp("[0-9]");
 
-    function validate(val) {
-      console.log(val.inputValue);
-      if (val.inputValue.match(stringValidate)) {
-        val.error.value = "";
-      } else if (val.value == 0) {
-        val.error.value = "enter the value";
+    function validate(name) {
+      console.log(name)
+      console.log(name.inputValue);
+      if (name.inputValue == 0 || name.inputValue === undefined) {
+        name.error = "enter the value";
+      } else if (name.inputValue.match(stringValidate)) {
+        name.error = "";
       } else {
-        val.error.value = "only number";
+        name.error = "only number";
       }
       console.log("exit");
     }
