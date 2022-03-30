@@ -25,19 +25,16 @@ export default {
   setup() {
     const typeOfСrop = reactive({ inputValue: "", error: "" });
     const yieldValue = ref({ inputValue: "", error: "" });
-    const stringValidate = new RegExp("[0-9]");
+    const stringValidate = new RegExp("[^0-9]");
 
-    function validate(name) {
-      console.log(name)
-      console.log(name.inputValue);
-      if (name.inputValue == 0 || name.inputValue === undefined) {
-        name.error = "enter the value";
-      } else if (name.inputValue.match(stringValidate)) {
-        name.error = "";
-      } else {
-        name.error = "only number";
+    function validate(objName) {
+      console.log(objName.inputValue);
+      if (objName.inputValue == 0 || objName.inputValue.match(stringValidate) ||objName.inputValue == undefined) {
+        objName.error = "enter the value";
+      } else{
+        objName.error = ""
       }
-      console.log("exit");
+     console.log(objName)
     }
     return { validate, typeOfСrop, yieldValue };
   },
