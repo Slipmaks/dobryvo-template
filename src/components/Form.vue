@@ -30,7 +30,7 @@ export default {
     function validate(objName) {
       console.log(objName.inputValue);
       if (objName.inputValue == 0 || objName.inputValue.match(stringValidate) ||objName.inputValue == undefined) {
-        objName.error = "enter the value";
+        objName.error = "enter correct the value";
       } else{
         objName.error = ""
       }
