@@ -61,10 +61,10 @@ import { ref } from "vue";
 
 export default {
   setup() {
-    const typeOfСrop = ref({ inputValue: 0, error: false });
-    const yieldValue = ref({ inputValue: 0, error: false });
-    const fertilizerPrice = ref({ inputValue: 0, error: false });
-    const sownArea = ref({ inputValue: 0, error: false });
+    const typeOfСrop = ref({ inputValue: "", error: false });
+    const yieldValue = ref({ inputValue: "", error: false });
+    const fertilizerPrice = ref({ inputValue: "", error: false });
+    const sownArea = ref({ inputValue: "", error: false });
     const stringValidate = new RegExp("[^0-9]");
     const profitVal = ref(0);
 
@@ -87,7 +87,7 @@ export default {
       ) {
         profitVal.value =
           +typeOfСrop.value.inputValue * +yieldValue.value.inputValue -
-          +fertilizerPrice.value.inputValue / +sownArea.value.inputValue;
+          +fertilizerPrice.value.inputValue * +sownArea.value.inputValue;
       } else {
         profitVal.value = 0;
       }

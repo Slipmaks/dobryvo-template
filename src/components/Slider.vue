@@ -1,4 +1,32 @@
 <template>
+  <div class="menu">
+    <header>
+      <div><h1>ДОБРИВО</h1></div>
+      <nav>
+        <ul>
+          <li>ОПЛАТА И ДОСТАВКА</li>
+          <li>НОВОСТИ</li>
+          <li>СПРАВОЧНИК</li>
+          <li>СЕРТИФИКАТЫ</li>
+        </ul>
+        <select>
+          <option>RU</option>
+          <option>UA</option>
+        </select>
+      </nav>
+    </header>
+    <menu>
+      <ul>
+        <li>НАГРО-УДОБРЕНИЕ</li>
+        <li>БИОДИЗЕЛЬ</li>
+        <li>СИЛЬКО</li>
+        <li>ИИНТЕРНЕТ-МАГАЗИН</li>
+        <li>ВОПРОСЫ-ОТВЕТЫ</li>
+        <li>КОНТАКТЫ</li>
+        <li>КОРЗИНА</li>
+      </ul>
+    </menu>
+  </div>
   <Splide :options="options">
     <SplideSlide>
       <img src="../assets/evergeen-souse/Header.png" alt="" />
@@ -37,5 +65,34 @@ export default {
 <style>
 .splide__slide img {
   width: 100%;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header li,
+menu li {
+  list-style: none;
+  display: inline-block;
+}
+nav {
+  display: flex;
+}
+nav li {
+  padding: 10px;
+}
+menu ul {
+  display: flex;
+  justify-content: center;
+}
+menu li {
+  padding: 10px;
+  border: 1px solid gainsboro;
+}
+.menu {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
 }
 </style>
