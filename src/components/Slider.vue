@@ -23,7 +23,7 @@
         <li>ИИНТЕРНЕТ-МАГАЗИН</li>
         <li>ВОПРОСЫ-ОТВЕТЫ</li>
         <li>КОНТАКТЫ</li>
-        <li>КОРЗИНА</li>
+        <li class="basket">КОРЗИНА</li>
       </ul>
     </menu>
   </div>
@@ -82,17 +82,31 @@ nav {
 nav li {
   padding: 10px;
 }
-menu ul {
+menu {
   display: flex;
   justify-content: center;
 }
+menu ul {
+  border: 1px solid grey;
+}
 menu li {
   padding: 10px;
-  border: 1px solid gainsboro;
+  background: linear-gradient(
+    0deg,
+    rgba(242, 243, 243, 1) 0%,
+    rgba(253, 253, 253, 1) 100%
+  );
 }
 .menu {
   width: 100%;
   position: absolute;
   z-index: 1;
+}
+.basket {
+  background: linear-gradient(
+    0deg,
+    rgba(117, 91, 30, 1) 0%,
+    rgba(84, 164, 40, 1) 100%
+  );
 }
 </style>
