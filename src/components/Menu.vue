@@ -19,7 +19,7 @@
       <li>НАГРО-УДОБРЕНИЕ</li>
       <li>БИОДИЗЕЛЬ</li>
       <li>СИЛЬКО</li>
-      <li>ИИНТЕРНЕТ-МАГАЗИН</li>
+      <li>ИНТЕРНЕТ-МАГАЗИН</li>
       <li>ВОПРОСЫ-ОТВЕТЫ</li>
       <li>КОНТАКТЫ</li>
       <li class="basket">КОРЗИНА</li>
@@ -44,6 +44,7 @@ header h1 {
 }
 header li {
   font-size: 11px;
+  display: inline-block;
 }
 header select {
   color: whitesmoke;
@@ -55,10 +56,10 @@ header select {
 header li,
 menu li {
   list-style: none;
-  display: inline-block;
   cursor: pointer;
 }
-nav {
+nav,
+menu li {
   display: flex;
 }
 nav li {
@@ -67,11 +68,14 @@ nav li {
 menu {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
+
 menu ul {
   border: 1px solid grey;
 }
 menu li {
+  width: 100%;
   font-family: "Roboto Condensed";
   font-weight: bold;
   padding: 10px;
@@ -80,6 +84,8 @@ menu li {
     rgb(230, 230, 230) 0%,
     rgba(253, 253, 253, 1) 100%
   );
+  align-items: center;
+  justify-content: center;
 }
 .wrapper {
   top: 60px;
