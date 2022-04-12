@@ -2,16 +2,19 @@
   <Menu />
   <Slider />
   <Form />
+  <Information />
 </template>
 <script>
 import Slider from "./components/Slider.vue";
 import Form from "./components/Form.vue";
 import Menu from "./components/Menu.vue";
+import Information from "./components/Information.vue";
 export default {
   components: {
     Slider,
     Form,
     Menu,
+    Information,
   },
 };
 </script>
