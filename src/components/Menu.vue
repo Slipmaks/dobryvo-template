@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div>
     <header>
       <div><h1>ДОБРИВО</h1></div>
       <nav>
@@ -28,10 +28,6 @@
 </template>
 
 <style>
-header,
-menu {
-  width: 1000px;
-}
 header {
   display: flex;
   align-items: center;
@@ -96,15 +92,7 @@ menu li::after {
   font-size: 7px;
   padding-left: 8px;
 }
-.wrapper {
-  top: 60px;
-  width: 100%;
-  position: absolute;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 .basket {
   cursor: pointer;
   font-size: 14px;

@@ -9,7 +9,7 @@
 <style>
 .main-information {
   display: flex;
-  background: #f1f2f2;
+
   justify-content: space-between;
 }
 .right-side {
