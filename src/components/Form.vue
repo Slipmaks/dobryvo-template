@@ -96,7 +96,9 @@ export default {
       ) {
         profitVal.value =
           +typeOfСrop.value.inputValue * +yieldValue.value.inputValue -
-          +fertilizerPrice.value.inputValue * +sownArea.value.inputValue;
+          +fertilizerPrice.value.inputValue *
+            (+yieldValue.value.inputValue / +sownArea.value.inputValue);
+        profitVal.value = profitVal.value.toFixed(1);
       } else {
         profitVal.value = 0;
       }
