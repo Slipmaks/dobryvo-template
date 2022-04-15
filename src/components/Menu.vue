@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrapper">
     <header>
       <div><h1>ДОБРИВО</h1></div>
       <nav>
@@ -118,5 +118,18 @@ menu li::after {
 }
 menu li:first-child {
   padding-left: 40px;
+}
+.wrapper {
+  top: 58px;
+  position: absolute;
+  max-width: 1000px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
 }
 </style>

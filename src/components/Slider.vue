@@ -1,4 +1,5 @@
 <template>
+  <Menu />
   <Splide :options="options">
     <SplideSlide>
       <img src="../assets/evergeen-souse/Header.png" alt="" />
@@ -14,11 +15,13 @@
 <script>
 import "@splidejs/splide/dist/css/splide.min.css";
 import { Splide, SplideSlide } from "@splidejs/vue-splide";
+import Menu from "./Menu.vue";
 
 export default {
   components: {
     Splide,
     SplideSlide,
+    Menu,
   },
   setup() {
     const options = {

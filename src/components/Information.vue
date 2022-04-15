@@ -3,9 +3,19 @@
     <div class="left-side">
       <h1>ОРГАНИЧЕСКОЕ НАНО-УДОБРЕНИЕ ДОБРИВО</h1>
     </div>
-    <div class="right-side"></div>
+    <div class="right-side">
+      <Form />
+    </div>
   </div>
 </template>
+<script>
+import Form from "./Form.vue";
+export default {
+  components: {
+    Form,
+  },
+};
+</script>
 <style>
 .main-information {
   display: flex;
