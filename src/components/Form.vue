@@ -111,8 +111,8 @@ export default {
 <style>
 .error {
   color: brown;
-  position: fixed;
-  margin-left: 60px;
+  position: absolute;
+  padding-left: 6%;
 }
 .main {
   width: 320px;
@@ -120,8 +120,6 @@ export default {
   background-color: #e9e5e4;
   display: flex;
   flex-direction: column;
-  top: 25%;
-  position: absolute;
 }
 .form {
   border: 2px dashed #a7a9ac;

@@ -1,21 +1,29 @@
 <template>
-  <div class="wrapper">
-    <div class="cont-1"></div>
-    <div class="cont-2"></div>
-    <div class="cont-3"></div>
+  <div class="global-wrapper">
+    <div class="wrapper">
+      <div class="cont-1"><Menu /></div>
+      <div class="cont-2">
+        <Overview />
+      </div>
+      <div class="cont-3"><Form /></div>
+    </div>
+    <Slider />
+    <BackgroundBody />
   </div>
-  <Slider />
-  <Information />
 </template>
 <script>
 import Slider from "./components/Slider.vue";
-
-import Information from "./components/Information.vue";
+import Menu from "./components/Menu.vue";
+import BackgroundBody from "./components/BackgroundBody.vue";
+import Form from "./components/Form.vue";
+import Overview from "./components/Overview.vue";
 export default {
   components: {
     Slider,
-
-    Information,
+    Menu,
+    BackgroundBody,
+    Form,
+    Overview,
   },
 };
 </script>
@@ -31,8 +39,36 @@ body {
   background: #f1f2f2;
 }
 .wrapper {
+  position: absolute;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 1000px;
+  max-width: 1000px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+}
+.cont-1 {
+  padding-top: 57px;
+  padding-bottom: 68px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.cont-3 {
+  justify-self: end;
+}
+.cont-2 h1 {
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  line-height: 48px;
+  color: white;
+  font-size: 60px;
+}
+.global-wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>
