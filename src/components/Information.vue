@@ -19,12 +19,23 @@ export default {
 <style>
 .main-information {
   display: flex;
-
-  justify-content: space-between;
+}
+.left-side {
+  width: 50%;
 }
 .right-side {
-  width: 507px;
-  height: 527px;
+  height: 526px;
+  width: 50%;
   background-image: url(../assets/evergeen-souse/Side.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.information-wrapper {
+  width: 1000px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="menu-wrapper">
     <header>
       <div><h1>ДОБРИВО</h1></div>
       <nav>
@@ -90,7 +90,7 @@ menu li {
 menu li::after {
   content: "▶";
   font-size: 7px;
-  padding-left: 8px;
+  padding-left: 7.5px;
 }
 
 .basket {
@@ -119,7 +119,7 @@ menu li::after {
 menu li:first-child {
   padding-left: 40px;
 }
-.wrapper {
+.menu-wrapper {
   top: 58px;
   position: absolute;
   max-width: 1000px;

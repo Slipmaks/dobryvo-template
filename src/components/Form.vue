@@ -120,7 +120,8 @@ export default {
   background-color: #e9e5e4;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  top: 25%;
+  position: absolute;
 }
 .form {
   border: 2px dashed #a7a9ac;
