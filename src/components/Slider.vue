@@ -28,6 +28,7 @@ export default {
       speed: 3000,
       arrows: false,
       pagination: false,
+      gap: 0,
     };
 
     return { options };

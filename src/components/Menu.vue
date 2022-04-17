@@ -67,6 +67,7 @@ nav li {
 }
 menu {
   display: flex;
+  width: 100%;
   justify-content: center;
   text-align: center;
   border: 1px solid #bab2a7;
@@ -76,7 +77,6 @@ menu li {
   padding-right: 24.9px;
   color: #6d6e71;
   height: 45px;
-
   font-family: "Roboto Condensed";
   font-weight: bold;
   background: linear-gradient(
@@ -101,7 +101,7 @@ menu li::after {
   border: none;
   display: flex;
   align-items: center;
-  padding: 0 49px;
+  padding: 0 59px;
   color: white;
   background: linear-gradient(
     0deg,
@@ -124,5 +124,10 @@ menu li:first-child {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media (max-width: 1140px) {
+  menu {
+    display: none;
+  }
 }
 </style>

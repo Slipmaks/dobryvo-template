@@ -71,4 +71,12 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+@media (max-width: 1140px) {
+  .global-wrapper {
+    width: 100%;
+  }
+  .wrapper {
+    width: 90%;
+  }
+}
 </style>
