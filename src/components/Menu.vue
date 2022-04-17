@@ -50,6 +50,13 @@ header select {
   background-color: transparent;
   border: 2px solid whitesmoke;
 }
+header select:focus-visible {
+  outline: none;
+}
+select option {
+  color: black;
+  background-color: rgb(255, 162, 0);
+}
 header li,
 menu li {
   list-style: none;

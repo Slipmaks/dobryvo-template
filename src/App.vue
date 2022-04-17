@@ -79,4 +79,14 @@ body {
     width: 90%;
   }
 }
+@media (max-width: 767px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  nav ul {
+    padding-right: 0;
+  }
+}
 </style>
