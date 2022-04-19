@@ -38,6 +38,6 @@ export default {
 <style>
 .splide__slide img {
   width: 100%;
-  min-height: 400px;
+  min-height: 186px;
 }
 </style>

@@ -49,6 +49,7 @@ header select {
   margin: 0;
   background-color: transparent;
   border: 2px solid whitesmoke;
+  height: 20px;
 }
 header select:focus-visible {
   outline: none;
@@ -81,7 +82,8 @@ menu {
 }
 
 menu li {
-  padding-right: 24.9px;
+  width: fit-content;
+  padding-right: 22px;
   color: #6d6e71;
   height: 45px;
   font-family: "Roboto Condensed";
@@ -135,6 +137,19 @@ menu li:first-child {
 @media (max-width: 1140px) {
   menu {
     display: none;
+  }
+}
+@media (max-width: 767px) {
+  header h1 {
+    font-size: 30px;
+  }
+  header li {
+    font-size: 10px;
+  }
+  nav ul {
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
   }
 }
 </style>

@@ -85,8 +85,20 @@ body {
     flex-direction: column;
     justify-content: space-between;
   }
-  nav ul {
-    padding-right: 0;
+
+  .cont-1 {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .cont-2 h1 {
+    font-size: 36px;
+    line-height: 28px;
+  }
+  .cont-3 {
+    display: flex;
+    justify-content: center;
   }
 }
 </style>
