@@ -41,7 +41,7 @@ body {
 .wrapper {
   position: absolute;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 60% 40%;
   max-width: 1000px;
   left: 0;
   right: 0;
@@ -58,13 +58,7 @@ body {
 .cont-3 {
   justify-self: end;
 }
-.cont-2 h1 {
-  font-family: "Roboto Condensed";
-  font-weight: bold;
-  line-height: 48px;
-  color: white;
-  font-size: 60px;
-}
+
 .global-wrapper {
   width: 90%;
   max-width: 1200px;

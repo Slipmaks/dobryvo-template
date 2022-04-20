@@ -1,9 +1,16 @@
 <template>
   <div class="overview">
-    <h1>ОРГАНИЧЕСКОЕ НАНО-УДОБНИЕ ДОБРИВО</h1>
     <div class="bottle-info">
-      <img src="../assets/evergeen-souse/bottle.png" alt="" />
+      <img
+        class="bottle"
+        src="../assets/evergeen-souse/bottle.png"
+        alt="bottle"
+      />
       <div>
+        <pre><h1>ОРГАНИЧЕСКОЕ
+       НАНО-УДОБНИЕ 
+           ДОБРИВО</h1></pre>
+
         <ul>
           <li>
             <h3>ПРИРОСТ УРАЖАЯ</h3>
@@ -32,25 +39,45 @@
 </template>
 <style scoped>
 ul {
+  padding-top: 40px;
   list-style-image: url(../assets/evergeen-souse/star.png);
+  display: flex;
+  flex-direction: column;
+  padding-left: 60px;
 }
 ul li::marker {
   font-size: 10px;
 }
-.bottle-info {
-  display: flex;
-  justify-content: space-between;
+.bottle-info ul li {
 }
 .overview h2 {
+  float: left;
   font-size: 40px;
   color: #25383f;
   font-family: "Roboto Condensed";
+  word-wrap: anywhere;
+}
+.bottle-info h1 {
+  overflow-wrap: break-word;
+
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  line-height: 48px;
+  color: white;
+  font-size: 60px;
+  padding-left: 90px;
 }
 .detail {
-  float: right;
   display: flex;
-
   align-items: flex-end;
   flex-direction: column;
+}
+.bottle {
+  top: 30px;
+  float: left;
+  shape-outside: url(../assets/evergeen-souse/bottle.png);
+  height: 345px;
+  width: 191px;
+  margin-top: 100px;
 }
 </style>
