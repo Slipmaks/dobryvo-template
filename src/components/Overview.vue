@@ -15,17 +15,17 @@
           <li>
             <h3>ПРИРОСТ УРАЖАЯ</h3>
             <p>в сравнении с химическим удобрением</p>
-            <h3>30%-250%</h3>
+            <h4>30%-250%</h4>
           </li>
           <li>
             <h3>ЭКОНОМИЯ</h3>
             <p>химических удобрений в хозяйстве</p>
-            <h3>до 70%</h3>
+            <h4>до 70%</h4>
           </li>
           <li>
             <h3>РОСТ КОРНЕВОЙ</h3>
             <p>системы растений при использовании</p>
-            <h3>в 3-10раз</h3>
+            <h4>в 3-10раз</h4>
           </li>
         </ul>
       </div>
@@ -48,8 +48,7 @@ ul {
 ul li::marker {
   font-size: 10px;
 }
-.bottle-info ul li {
-}
+
 .overview h2 {
   float: left;
   font-size: 40px;
@@ -66,6 +65,22 @@ ul li::marker {
   color: white;
   font-size: 60px;
   padding-left: 90px;
+}
+.bottle-info h3 {
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  font-size: 25.16px;
+}
+.bottle-info h4 {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 35.16px;
+  color: #c49a6c;
+}
+.bottle-info p {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 11px;
 }
 .detail {
   display: flex;
