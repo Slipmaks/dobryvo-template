@@ -22,7 +22,7 @@
       <li>ИНТЕРНЕТ-МАГАЗИН</li>
       <li>ВОПРОСЫ-ОТВЕТЫ</li>
       <li>КОНТАКТЫ</li>
-      <button class="basket">КОРЗИНА</button>
+      <button class="basket" type="button">КОРЗИНА</button>
     </menu>
   </div>
 </template>
@@ -56,7 +56,6 @@ header select:focus-visible {
 }
 select option {
   color: black;
-  background-color: rgb(255, 162, 0);
 }
 header li,
 menu li {
@@ -83,7 +82,7 @@ menu {
 
 menu li {
   width: fit-content;
-  padding-right: 22px;
+  padding-right: 24px;
   color: #6d6e71;
   height: 45px;
   font-family: "Roboto Condensed";
@@ -103,6 +102,7 @@ menu li::after {
 }
 
 .basket {
+  width: 187px;
   cursor: pointer;
   font-size: 14px;
   font-family: "Roboto Condensed";
@@ -110,7 +110,7 @@ menu li::after {
   border: none;
   display: flex;
   align-items: center;
-  padding: 0 59px;
+  justify-content: center;
   color: white;
   background: linear-gradient(
     0deg,
