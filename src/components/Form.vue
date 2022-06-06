@@ -131,19 +131,15 @@ export default {
   height: 100%;
   background-color: #f2f0ef;
 }
-/* .form-container {
-  top: 230px;
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
-/* .form-wrapper {
-  width: 1000px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-} */
+@media (max-width: 926px) {
+  .main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 526px) {
+  .main {
+    margin-top: 100px;
+  }
+}
 </style>

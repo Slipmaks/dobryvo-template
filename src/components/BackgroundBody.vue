@@ -22,13 +22,33 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-@media (max-width: 767px) {
+@media (max-width: 926px) {
   .main-information {
     display: block;
+  }
+  .left-side {
+    height: 490px;
+  }
+  .right-side {
+    height: 800px;
   }
   .left-side,
   .right-side {
     width: 100%;
+  }
+}
+@media (max-width: 554px) {
+  .left-side {
+    height: 752px;
+  }
+  .right-side {
+    max-width: 100%;
+    height: 100vh;
+  }
+}
+@media (max-width: 456px) {
+  .left-side {
+    height: 678px;
   }
 }
 </style>

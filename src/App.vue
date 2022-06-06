@@ -74,7 +74,7 @@ body {
     width: 90%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 926px) {
   .wrapper {
     display: flex;
     flex-direction: column;
